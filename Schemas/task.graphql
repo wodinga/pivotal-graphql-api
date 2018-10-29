@@ -1,0 +1,10 @@
+type Task{
+    id: ID
+    story_id: ID
+    description: String
+    complete: Boolean
+    position: Int
+    created_at: String
+    updated_at: String
+    kind: String
+}

@@ -1,0 +1,6 @@
+{
+  "rules": ["enum-values-sorted-alphabetically",
+            "enum-values-all-caps",
+            "fields-are-camel-cased",
+            ]
+}

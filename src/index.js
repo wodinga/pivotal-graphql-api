@@ -1,12 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+const { ApolloServer, gql } = require('apollo-server');
+const importSchema = require('graphql-import').importSchema()
+const makeExecutableSchema = require('graphql-tools').makeExecutableSchema()
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const typeDefs = importSchema('Schemas/schema.graphql')
+const resolvers = {}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+// In the most basic sense, the ApolloServer can be started
+// by passing type definitions (typeDefs) and the resolvers
+// responsible for fetching the data for those types.
+const server = new ApolloServer({ typeDefs, resolvers });
+
+// This `listen` method launches a web-server.  Existing apps
+// can utilize middleware options, which we'll discuss later.
+server.listen().then(({ url }) => {
+    console.log(`🚀  Server ready at ${url}`);
+});
