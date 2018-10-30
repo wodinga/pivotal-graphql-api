@@ -1,9 +1,8 @@
 type Label{
     id: ID!
-    project_id: Int!
+    project_id: Project!
     name: String!
     created_at: String
     updated_at: String
-    #counts: story_counts
-    kind: String
+    counts: Int!
 }

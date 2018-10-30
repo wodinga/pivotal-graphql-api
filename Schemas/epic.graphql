@@ -12,5 +12,4 @@ type Epic{
     updated_at: String
     url: String
     completed_at: String
-    kind: String
 }
