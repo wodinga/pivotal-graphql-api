@@ -1,5 +1,0 @@
-# import Project from "Project.graphql"
-type Query {
-    Project(id:ID!) : Project
-
-}

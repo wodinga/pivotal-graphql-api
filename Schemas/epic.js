@@ -1,5 +1,4 @@
-# import Comment from "comment.graphql"
-# import Person from "person.graphql"
+module.exports.typedef = `
 type Epic{
     id: ID!
     project: Project!
@@ -13,3 +12,4 @@ type Epic{
     url: String
     completed_at: String
 }
+`

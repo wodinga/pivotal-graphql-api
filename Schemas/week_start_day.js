@@ -1,3 +1,4 @@
+module.exports.typedef = `
 enum Week_start_day {
     SUNDAY
     MONDAY
@@ -7,3 +8,4 @@ enum Week_start_day {
     FRIDAY
     SATURDAY
 }
+`

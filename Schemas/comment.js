@@ -1,5 +1,4 @@
-# import Story from "story.graphql"
-# import Epic from "epic.graphql"
+module.exports.typedef = `
 type Comment{
     id: ID!
     story: Story!
@@ -9,3 +8,4 @@ type Comment{
     created_at: String
     updated_at: String
 }
+`

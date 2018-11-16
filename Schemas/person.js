@@ -1,3 +1,4 @@
+module.exports.typedef = `
 type Person{
     id: ID
     name: String!
@@ -5,3 +6,4 @@ type Person{
     initials: String
     username: String
 }
+`

@@ -1,6 +1,4 @@
-# import Week_start_day from "week_start_day.graphql"
-# import Epic from "epic.graphql"
-# import Label from "label.graphql"
+module.exports.typdef = `
 type Project {
     id: ID
     name: String
@@ -16,3 +14,4 @@ type Project {
     epics: [Epic]
 
 }
+`

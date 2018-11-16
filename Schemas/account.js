@@ -1,3 +1,4 @@
+export const typedef = `
 type Account {
     id: ID
     name: String
@@ -8,3 +9,4 @@ type Account {
     created_at: String
     updated_at: String
 }
+`

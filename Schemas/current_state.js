@@ -1,3 +1,4 @@
+module.exports.typedef = `
 enum Current_state {
     ACCEPTED
     DELIVERED
@@ -8,3 +9,4 @@ enum Current_state {
     UNSTARTED
     UNSCHEDULED
 }
+`

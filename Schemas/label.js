@@ -1,3 +1,4 @@
+module.exports.typedef = `
 type Label{
     id: ID!
     project_id: Project!
@@ -6,3 +7,4 @@ type Label{
     updated_at: String
     counts: Int!
 }
+`

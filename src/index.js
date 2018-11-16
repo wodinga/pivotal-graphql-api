@@ -1,6 +1,6 @@
-const { ApolloServer, gql } = require('apollo-server');
-const importSchema = require('graphql-import').importSchema
-const makeExecutableSchema = require('graphql-tools').makeExecutableSchema
+const {ApolloServer, gql} = require('apollo-server') ;
+const {importSchema}  = require('graphql-import');
+const makeExecutableSchema = require('graphql-tools')
 
 const typeDefs = importSchema('Schemas/schema.graphql')
 const resolvers = {}

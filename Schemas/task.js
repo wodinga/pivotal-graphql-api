@@ -1,4 +1,4 @@
-# import Story from "story.graphql"
+module.exports.typedef = `
 type Task{
     id: ID
     story_id: Story!
@@ -8,3 +8,4 @@ type Task{
     created_at: String
     updated_at: String
 }
+`

@@ -1,9 +1,4 @@
-# import Story_type from "story_type.graphql"
-# import Current_state from "current_state.graphql"
-# import Label from "label.graphql"
-# import Task from "task.graphql"
-# import Project from "project.graphql"
-# import Status from "status.graphql"
+module.exports.typedef = `
 type Story {
     id: ID
     project: Project
@@ -34,4 +29,4 @@ type Story {
     external_id: String
     url: String
 }
-
+`

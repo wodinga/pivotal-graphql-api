@@ -1,3 +1,4 @@
+module.exports.typedef = `
 enum Status {
     ACTIVE
     SUSPENDED
@@ -5,3 +6,4 @@ enum Status {
     DELETED
     LIMITED
 }
+`
