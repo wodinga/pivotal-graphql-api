@@ -1,4 +1,4 @@
-module.exports.typdef = `
+module.exports.typedef = `
 type Project {
     id: ID
     name: String

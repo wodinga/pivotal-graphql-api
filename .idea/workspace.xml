@@ -2,30 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3076a771-6546-4d98-924f-d5a4832e3038" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/Current_state.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/Story_type.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/account.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/comment.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/date.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/epic.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/graphql.config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/graphql.schema.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/label.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/person.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/project.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/schema.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/status.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/story.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/story_count.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/task.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/timezone.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schemas/week_start_day.graphql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Schemas/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/Schemas/comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Schemas/graphql.config.mjson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Schemas/graphql.schema.mjson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Schemas/project.js" beforeDir="false" afterPath="$PROJECT_DIR$/Schemas/project.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -123,22 +106,133 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="714336603">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="486" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="486" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="ESLintLanguageService" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="20" />
+          <entry key="mjson" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JavaScript" value="20" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="tracker-graphql-server" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Schemas/graphql.schema.mjson">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/schema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+            <state relative-caret-position="135">
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Schemas/comment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="28" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Schemas/label.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Schemas/person.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Schemas/project.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Schemas/status.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Schemas/story_type.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Schemas/task.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Schemas/timezone.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -209,19 +303,19 @@
         <option value="$PROJECT_DIR$/schemaValidator/app.js" />
         <option value="$PROJECT_DIR$/src/index.mjs" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/Schemas/comment.js" />
         <option value="$PROJECT_DIR$/Schemas/current_state.js" />
         <option value="$PROJECT_DIR$/Schemas/epic.js" />
         <option value="$PROJECT_DIR$/Schemas/label.js" />
         <option value="$PROJECT_DIR$/Schemas/person.js" />
-        <option value="$PROJECT_DIR$/Schemas/project.js" />
         <option value="$PROJECT_DIR$/Schemas/story_type.js" />
         <option value="$PROJECT_DIR$/Schemas/story.js" />
         <option value="$PROJECT_DIR$/Schemas/task.js" />
         <option value="$PROJECT_DIR$/Schemas/timezone.js" />
         <option value="$PROJECT_DIR$/Schemas/week_start_day.js" />
         <option value="$PROJECT_DIR$/Schemas/status.js" />
+        <option value="$PROJECT_DIR$/Schemas/project.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/Schemas/comment.js" />
         <option value="$PROJECT_DIR$/src/schema.js" />
       </list>
     </option>
@@ -248,9 +342,9 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="954" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -258,38 +352,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="tracker-graphql-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tracker-graphql-server" type="462c0819:PsiDirectoryNode" />
+              <item name="TrackerGQLServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrackerGQLServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="tracker-graphql-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tracker-graphql-server" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tracker-graphql-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tracker-graphql-server" type="462c0819:PsiDirectoryNode" />
+              <item name="TrackerGQLServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrackerGQLServer" type="462c0819:PsiDirectoryNode" />
               <item name="Schemas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="tracker-graphql-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tracker-graphql-server" type="462c0819:PsiDirectoryNode" />
+              <item name="TrackerGQLServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrackerGQLServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="sche&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/schema.js&#10;sch&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/schema.js&#10;week&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/week_start_day.js&#10;time&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/timezone.js&#10;task&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/task.js&#10;story&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/story.js&#10;status&#9;null&#9;null&#10;stat&#9;null&#9;null&#10;proj&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/project.js&#10;person&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/person.js&#10;pack&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/package.json&#10;labe&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/label.js&#10;packa&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/package.json&#10;label&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/label.js&#10;epic&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/epic.js&#10;curr&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/current_state.js&#10;commen&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/comment.js&#10;comm&#9;ACTION&#9;CheckinProject&#10;in&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/index.js&#10;index&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/index.js&#10;graphql-import&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/node_modules/graphql-import&#10;index.m&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/index.mjs&#10;app&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/schemaValidator/app.js&#10;yarn&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/yarn.lock&#10;sc&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/schema.mjs&#10;schema.&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/schema.mjs&#10;pac&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/package.json&#10;timez&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/timezone.js&#10;story_&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/Story_type.js&#10;project&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/project.js&#10;pro&#9;ACTION&#9;ActivateProjectToolWindow&#10;pers&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/person.js&#10;perso&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/person.js&#10;date.&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/date.js&#10;da&#9;null&#9;null&#10;comment&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/comment.js&#10;account&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/account.js&#10;acc&#9;null&#9;null&#10;inde&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/index.js&#10;schema&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/schema.graphql&#10;index.js&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/index.js&#10;statu&#9;null&#9;null&#10;per&#9;null&#9;null&#10;tas&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/task.graphql&#10;stor&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/story.graphql&#10;lab&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/label.graphql&#10;sto&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/story.graphql&#10;come&#9;null&#9;null&#10;la&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/label.graphql&#10;epi&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/epic.graphql" />
+    <property name="SearchEverywhereHistoryKey" value="s&#9;FILE&#9;file:///Users/sharpcookies/git/TrackerGQLServer/src/schema.js&#10;inde&#9;FILE&#9;file:///Users/sharpcookies/git/TrackerGQLServer/src/index.js&#10;sche&#9;FILE&#9;file:///Users/sharpcookies/git/TrackerGQLServer/src/schema.js&#10;sc&#9;FILE&#9;file:///Users/sharpcookies/git/TrackerGQLServer/src/schema.js&#10;in&#9;FILE&#9;file:///Users/sharpcookies/git/TrackerGQLServer/src/index.js&#10;pro&#9;FILE&#9;file:///Users/sharpcookies/git/TrackerGQLServer/Schemas/project.js&#10;story&#9;FILE&#9;file:///Users/sharpcookies/git/TrackerGQLServer/Schemas/story.js&#10;comme&#9;FILE&#9;file:///Users/sharpcookies/git/TrackerGQLServer/Schemas/comment.js&#10;sch&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/schema.js&#10;week&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/week_start_day.js&#10;time&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/timezone.js&#10;task&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/task.js&#10;status&#9;null&#9;null&#10;stat&#9;null&#9;null&#10;proj&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/project.js&#10;person&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/person.js&#10;pack&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/package.json&#10;labe&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/label.js&#10;packa&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/package.json&#10;label&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/label.js&#10;epic&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/epic.js&#10;curr&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/current_state.js&#10;commen&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/comment.js&#10;comm&#9;ACTION&#9;CheckinProject&#10;index&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/index.js&#10;graphql-import&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/node_modules/graphql-import&#10;index.m&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/index.mjs&#10;app&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/schemaValidator/app.js&#10;yarn&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/yarn.lock&#10;schema.&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/schema.mjs&#10;pac&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/package.json&#10;timez&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/timezone.js&#10;story_&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/Story_type.js&#10;project&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/project.js&#10;pers&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/person.js&#10;perso&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/person.js&#10;date.&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/date.js&#10;da&#9;null&#9;null&#10;comment&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/comment.js&#10;account&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/account.js&#10;acc&#9;null&#9;null&#10;schema&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/schema.graphql&#10;index.js&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/src/index.js&#10;statu&#9;null&#9;null&#10;per&#9;null&#9;null&#10;tas&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/task.graphql&#10;stor&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/story.graphql&#10;lab&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/label.graphql&#10;sto&#9;FILE&#9;file:///Users/drg62sf/WebstormProjects/tracker-graphql-server/Schemas/story.graphql&#10;come&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -322,7 +411,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.schema.js">
+  <component name="RunManager" selected="Node.js.index.js">
+    <configuration name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
     <configuration name="schema.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="schema.js" working-dir="$PROJECT_DIR$/src">
       <method v="2" />
     </configuration>
@@ -343,9 +435,11 @@
       <item itemvalue="npm.Start" />
       <item itemvalue="Node.js.schema.js" />
       <item itemvalue="Node.js.schema.mjs" />
+      <item itemvalue="Node.js.index.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.index.js" />
         <item itemvalue="Node.js.schema.js" />
         <item itemvalue="Node.js.schema.mjs" />
       </list>
@@ -381,31 +475,33 @@
       <workItem from="1542223853520" duration="3228000" />
       <workItem from="1542300137081" duration="6457000" />
       <workItem from="1542398884076" duration="1000" />
+      <workItem from="1542399045744" duration="5353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53340000" />
+    <option name="totallyTimeSpent" value="58693000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49285713" weight="0.2694497" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49285713" weight="0.26858515" />
       <window_info id="Structure" order="1" sideWeight="0.50714284" side_tool="true" weight="0.21396731" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" sideWeight="0.50612247" side_tool="true" weight="0.21396731" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32667333" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3996004" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40237564" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39940608" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.0" />
-      <window_info anchor="bottom" id="GraphQL" order="11" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32928064" />
+      <window_info anchor="bottom" id="GraphQL" order="11" weight="0.2494432" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32967034" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -420,22 +516,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/schema.js</url>
-          <line>19</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/schema.js</url>
-          <line>15</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -486,17 +566,27 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>[Comment, Current_State, Epic, Label, Person, Project, Status, Story, Story_type, Task, Timezone, Week_start_day]</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>graphqlTools.mergeSchemas</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>graphqlTools.makeExecutableSchema</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>schema</expression-string>
         <language-id>ECMAScript 6</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
         <expression-string>graphqlTools</expression-string>
-        <language-id>JavaScript</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>graphqlTools.makeExecutableSchema</expression-string>
         <language-id>JavaScript</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -513,19 +603,12 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Schemas/account.gql" />
     <entry file="file://$PROJECT_DIR$/Schemas/Current_state.graphql" />
     <entry file="file://$PROJECT_DIR$/Schemas/person.gql" />
     <entry file="file://$PROJECT_DIR$/src/App.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/eslint-config-react-app/index.js" />
     <entry file="file://$PROJECT_DIR$/Schemas/week_start_day.graphql" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/inspector.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/inspector.d.ts" />
     <entry file="file://$PROJECT_DIR$/Schemas/account.graphql" />
     <entry file="file://$PROJECT_DIR$/Schemas/date.graphql" />
     <entry file="file://$PROJECT_DIR$/Schemas/comment.graphql" />
@@ -546,42 +629,16 @@
     <entry file="file://$PROJECT_DIR$/Schemas/story.graphql" />
     <entry file="file://$PROJECT_DIR$/Schemas/status.graphql" />
     <entry file="file://$PROJECT_DIR$/Schemas/schema.graphql" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/accepts/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/accepts/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/node_modules/react-scripts/template/src/App.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126045">
-          <caret line="8463" column="14" selection-start-line="8463" selection-start-column="14" selection-end-line="8463" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/graphql/utilities/findBreakingChanges.js.flow">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/graphql/utilities/findBreakingChanges.js.flow" />
     <entry file="file://$PROJECT_DIR$/Schemas/date.js" />
     <entry file="file://$PROJECT_DIR$/Schemas/story_count.js" />
     <entry file="file://$PROJECT_DIR$/src/schema.mjs" />
     <entry file="file://$PROJECT_DIR$/src/index.mjs" />
-    <entry file="file://$PROJECT_DIR$/schemaValidator/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/graphql-import/dist/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/schemaValidator/app.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/graphql-import/dist/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/yarn.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15975">
@@ -589,44 +646,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Schemas/schema.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Schemas/schema.js" />
     <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Schemas/account.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Schemas/comment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Schemas/current_state.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Schemas/epic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Schemas/graphql.config.mjson">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Schemas/week_start_day.js">
@@ -636,10 +657,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Schemas/timezone.js">
+    <entry file="file://$PROJECT_DIR$/Schemas/graphql.schema.mjson">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Schemas/account.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Schemas/current_state.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Schemas/graphql.config.mjson">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Schemas/epic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -657,31 +694,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Schemas/story.js">
+    <entry file="file://$PROJECT_DIR$/Schemas/timezone.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Schemas/status.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Schemas/project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Schemas/person.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -692,13 +708,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Schemas/graphql.schema.mjson">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Schemas/person.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Schemas/status.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/graphql-tools/dist/stitching/mergeSchemas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Schemas/story.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Schemas/project.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Schemas/comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/schema.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        <state relative-caret-position="135">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="49" />
         </state>
       </provider>
     </entry>

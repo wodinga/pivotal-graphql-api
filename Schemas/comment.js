@@ -1,10 +1,8 @@
-module.exports.typedef = `
-type Comment{
-    id: ID!
-    story: Story!
-    epic_id: Epic!
+const gql = require('apollo-server')
+module.exports.typedef = gql`
+type Comment {
+    id: Int!
     text: String
-    person_id: Person!
     created_at: String
     updated_at: String
 }
