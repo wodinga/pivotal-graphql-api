@@ -1,8 +1,6 @@
 const {ApolloServer} = require('apollo-server') ;
 const schema = require('./schema')
 
-
-
 // In the most basic sense, the ApolloServer can be started
 // by passing type definitions (typeDefs) and the resolvers
 // responsible for fetching the data for those types.

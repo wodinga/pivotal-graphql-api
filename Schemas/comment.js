@@ -1,5 +1,4 @@
-const gql = require('apollo-server')
-module.exports.typedef = gql`
+module.exports.typedef = `
 type Comment {
     id: Int!
     text: String
