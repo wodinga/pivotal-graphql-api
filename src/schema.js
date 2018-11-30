@@ -2,6 +2,7 @@ const {printSchema} = require('graphql/utilities')
 const {gql} = require('apollo-server') ;
 const graphqlTools = require('graphql-tools')
 const makeExecutableSchema = graphqlTools.makeExecutableSchema
+// const datasource = require('./Datasource')
 
 
 const Comment = require("../Schemas/comment").typedef;
@@ -26,10 +27,21 @@ const Query = `
         People: [Person]
         Stories: [Story]
         Tasks: [Task]
+        Projects(id: ID!):[Project]
     }
 `
 const schema = makeExecutableSchema({
-    typeDefs: [Query, Comment, Story, Project, Story_type, Current_State, Epic, Label, Person, Status, Task, Timezone, Week_start_day]
+    typeDefs: [Query, Comment, Story, Project, Story_type, Current_State, Epic, Label, Person, Status, Task,Project, Timezone, Week_start_day],
+    resolvers: {
+        Query: {
+            Projects: async (_source, {id}, {dataSources}) => {
+                return dataSources.trackerAPI.getProjects(id);
+            }
+        },
+        Project: {
+
+        }
+    }
 });
 
 console.log(printSchema(schema))
