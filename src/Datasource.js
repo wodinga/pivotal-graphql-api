@@ -1,0 +1,18 @@
+const RESTDataSource  = require('apollo-datasource-rest').RESTDataSource;
+
+module.exports = class TrackerAPI extends RESTDataSource {
+    constructor() {
+        super();
+        this.baseURL = 'https://www.pivotaltracker.com/services/v5/';
+    }
+
+    willSendRequest(request) {
+        request.headers.set('X-TrackerToken', "6460ea07df7608e56028f7f8a009c08d");
+        request.headers.set('Content-Type', "application/json");
+        console.log(request)
+    }
+
+    async getProjects() {
+        return this.get('projects');
+    }
+};

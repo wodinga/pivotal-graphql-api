@@ -1,36 +1,36 @@
 const {printSchema} = require('graphql/utilities')
-const {gql} = require('apollo-server') ;
 const graphqlTools = require('graphql-tools')
 const makeExecutableSchema = graphqlTools.makeExecutableSchema
 
 
-const Comment = require("../Schemas/comment").typedef;
-const Current_State = require("../Schemas/current_state").typedef;
-const Epic = require("../Schemas/epic").typedef ;
-const Label = require("../Schemas/label").typedef  ;
-const Person = require("../Schemas/person").typedef;
-const Project = require("../Schemas/project").typedef;
-const Status = require("../Schemas/status").typedef;
-const Story = require("../Schemas/story").typedef;
-const Story_type = require("../Schemas/story_type").typedef;
-const Task = require("../Schemas/task").typedef;
-const Timezone = require("../Schemas/timezone").typedef ;
-const Week_start_day = require("../Schemas/week_start_day").typedef;
+// Schema for all the types
+const Comment = require("../Schemas/comment");
+const Current_State = require("../Schemas/current_state");
+const Epic = require("../Schemas/epic") ;
+const Label = require("../Schemas/label")  ;
+const Person = require("../Schemas/person");
+const Project = require("../Schemas/project");
+const Status = require("../Schemas/status");
+const Story = require("../Schemas/story");
+const Story_type = require("../Schemas/story_type");
+const Task = require("../Schemas/task");
+const Timezone = require("../Schemas/timezone") ;
+const Week_start_day = require("../Schemas/week_start_day");
 
-
+//Root query, which is required
 const Query = `
     type Query{
-        Comments: [Comment]
-        Epics: [Epic]
-        Labels: [Label]
-        People: [Person]
-        Stories: [Story]
-        Tasks: [Task]
+        Projects: [Project]
     }
 `
-const schema = makeExecutableSchema({
-    typeDefs: [Query, Comment, Story, Project, Story_type, Current_State, Epic, Label, Person, Status, Task, Timezone, Week_start_day]
-});
+
+const schemas = [Comment, Project ,Current_State,Epic, Label, Person, Status, Story, Story_type,Task, Timezone, Week_start_day ]
+
+const typeDefs = [Query].concat(schemas.map((schema) => schema.typedef))
+const resolvers = schemas.filter((schema) => schema.resolvers != undefined).map((schema) => schema.resolvers)
+
+//Make and merge schemas
+const schema = makeExecutableSchema({typeDefs, resolvers});
 
 console.log(printSchema(schema))
 module.exports = schema

@@ -15,3 +15,11 @@ type Project {
 
 }
 `
+
+module.exports.resolvers = {
+    Query: {
+        Projects: async (_source, { id }, { dataSources }) => {
+            return dataSources.trackerAPI.getProjects(id);
+        },
+    }
+}
