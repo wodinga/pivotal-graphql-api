@@ -15,8 +15,8 @@ type Story {
     counts_total: Int
     requested_by_id: Person
     owner_ids: [Person]
-    label_ids: [Label]
-    task_ids: [Task]
+    labels: [Label]
+    tasks: [Task]
     pull_request_ids: [ID]
     blocker_ids: [Person]
     follower_ids: [Person]
@@ -30,3 +30,12 @@ type Story {
     url: String
 }
 `
+
+module.exports.resolvers = {
+    Project: {
+        labels: async (_source, args, { dataSources }) => {
+            return dataSources.trackerAPI.getLabels(_source.id);9
+        },
+    }
+
+}
