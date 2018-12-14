@@ -16,6 +16,19 @@ type Project {
 }
 `
 
-// module.exports.resolvers = {
-//
-// }
+module.exports.resolvers = {
+    Query: {
+        Projects: async (_source, { id }, { dataSources }) => {
+            return dataSources.trackerAPI.getProjects(id);
+        },
+    },
+    Project: {
+        epics: async (_source, args, { dataSources }) => {
+            return dataSources.trackerAPI.getEpics(_source.id);
+        },
+        labels: async (_source, args, { dataSources }) => {
+            return dataSources.trackerAPI.getLabels(_source.id);
+        },
+    }
+
+}

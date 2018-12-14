@@ -1,30 +1,24 @@
-const { RESTDataSource } = require('apollo-datasource-rest');
-
-const token = "46284357a3bf81dafd39bd71e6fe900a"
-
+const RESTDataSource = require('apollo-datasource-rest').RESTDataSource
 module.exports = class TrackerAPI extends RESTDataSource {
     constructor() {
         super();
         this.baseURL = 'https://www.pivotaltracker.com/services/v5/';
-        console.log("TrackerAPI class instantiated")
     }
 
     willSendRequest(request) {
-        request.headers.set('X-TrackerToken', token);
+        request.headers.set('X-TrackerToken', "6460ea07df7608e56028f7f8a009c08d");
+        request.headers.set('Content-Type', "application/json");
         console.log(request)
     }
 
-
-    async getProjects(account_ids) {
-        console.log(account_ids)
-        return this.get(`projects?account_ids=${account_ids}`);
+    async getEpics(project_id) {
+        return this.get(`projects/${project_id}/epics`);
     }
 
-    // async getMostViewedMovies(limit = 10) {
-    //     const data = await this.get('movies', {
-    //         per_page: limit,
-    //         order_by: 'most_viewed',
-    //     });
-    //     return data.results;
-    // }
-}
+    async getLabels(project_id) {
+        return this.get(`projects/${project_id}/labels`);
+    }
+    async getProjects() {
+        return this.get('projects');
+    }
+};
