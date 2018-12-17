@@ -5,6 +5,7 @@ const makeExecutableSchema = graphqlTools.makeExecutableSchema
 
 
 // Schema for all the types
+const Account = require("../Schemas/account");
 const Comment = require("../Schemas/comment");
 const Current_State = require("../Schemas/current_state");
 const Epic = require("../Schemas/epic") ;
@@ -17,15 +18,17 @@ const Story_type = require("../Schemas/story_type");
 const Task = require("../Schemas/task");
 const Timezone = require("../Schemas/timezone") ;
 const Week_start_day = require("../Schemas/week_start_day");
+const Me = require("../Schemas/me");
 
 //Root query, which is required
 const Query = `
     type Query{
         Projects: [Project]
+        me: Me
     }
 `
 
-const schemas = [Comment, Project ,Current_State,Epic, Label, Person, Status, Story, Story_type,Task, Timezone, Week_start_day ]
+const schemas = [Account, Comment, Project ,Current_State,Epic, Label, Person, Status, Story, Story_type,Task, Timezone, Week_start_day, Me ]
 
 const typeDefs = [Query].concat(schemas.map((schema) => schema.typedef))
 const resolvers = schemas.filter((schema) => schema.resolvers != undefined).map((schema) => schema.resolvers)

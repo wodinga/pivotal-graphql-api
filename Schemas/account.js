@@ -1,4 +1,4 @@
-export const typedef = `
+module.exports.typedef = `
 type Account {
     id: ID
     name: String
