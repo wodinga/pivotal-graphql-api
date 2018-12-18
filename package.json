@@ -1,10 +1,15 @@
 {
   "name": "tracker-graphql-server",
+  "engines": {
+    "node": "8.13.0"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "apollo": "^2.1.8",
     "apollo-datasource-rest": "^0.2.1",
     "apollo-server": "^2.1.0",
+    "eslint-plugin-node": "^8.0.0",
     "graphql": "^14.0.2",
     "graphql-import": "^0.7.1",
     "graphql-tools": "^4.0.2",

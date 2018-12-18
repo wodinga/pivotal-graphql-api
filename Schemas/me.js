@@ -27,8 +27,5 @@ module.exports.resolvers = {
         accounts: async (_source, {id}, { dataSources }) => {
             return dataSources.trackerAPI.getAccounts();
         },
-        stories: async (_source, args, { dataSources }) => {
-            return dataSources.trackerAPI.getStories(_source.id);9
-        },
     }
 }

@@ -6,7 +6,7 @@ module.exports = class TrackerAPI extends RESTDataSource {
     }
 
     willSendRequest(request) {
-        request.headers.set('X-TrackerToken', "6460ea07df7608e56028f7f8a009c08d");
+        request.headers.set('X-TrackerToken', process.env.TOKEN);
         request.headers.set('Content-Type', "application/json");
         console.log(request)
     }
