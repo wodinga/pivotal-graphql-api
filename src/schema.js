@@ -24,7 +24,7 @@ const Me = require("../Schemas/me");
 const Query = `
     type Query{
         Projects: [Project]
-        me: Me
+        me(api_token: String!): Me
     }
 `
 

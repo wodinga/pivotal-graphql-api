@@ -16,8 +16,8 @@ type Me {
 
 module.exports.resolvers = {
     Query: {
-        me: async (_source, args, { dataSources }) => {
-            return dataSources.trackerAPI.getMe();
+        me: async (_source, {api_token}, { dataSources }) => {
+            return dataSources.trackerAPI.getMe(api_token);
         },
     },
     Me: {

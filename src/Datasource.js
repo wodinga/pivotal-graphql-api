@@ -1,4 +1,5 @@
 const RESTDataSource = require('apollo-datasource-rest').RESTDataSource
+var token = process.env.TOKEN
 module.exports = class TrackerAPI extends RESTDataSource {
     constructor() {
         super();
@@ -6,7 +7,7 @@ module.exports = class TrackerAPI extends RESTDataSource {
     }
 
     willSendRequest(request) {
-        request.headers.set('X-TrackerToken', process.env.TOKEN);
+        request.headers.set('X-TrackerToken', token);
         request.headers.set('Content-Type', "application/json");
         console.log(request)
     }
@@ -30,7 +31,8 @@ module.exports = class TrackerAPI extends RESTDataSource {
     async getAccounts() {
         return this.get('accounts');
     }
-    async getMe() {
+    async getMe(api_token) {
+        token = api_token
         return this.get('me');
     }
     async getProjects() {
