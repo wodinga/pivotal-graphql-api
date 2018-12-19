@@ -28,10 +28,10 @@ module.exports.resolvers = {
             return dataSources.trackerAPI.getEpics(_source.id);
         },
         stories: async (_source, args, { dataSources }) => {
-            return dataSources.trackerAPI.getStories(_source.id);9
+            return dataSources.trackerAPI.getStories(_source.id);
         },
         labels: async (_source, args, { dataSources }) => {
-            return dataSources.trackerAPI.getLabels(_source.id);9
+            return dataSources.trackerAPI.getLabels(_source.id);
         },
     }
 

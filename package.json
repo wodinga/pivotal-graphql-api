@@ -1,6 +1,9 @@
 {
   "name": "tracker-graphql-server",
   "version": "0.1.0",
+  "engines": {
+    "node": "^8.11.0"
+  },
   "private": true,
   "dependencies": {
     "apollo": "^2.1.8",

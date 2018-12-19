@@ -1,6 +1,6 @@
 module.exports.typedef = `
 type Comment {
-    id: Int!
+    id: ID!
     text: String
     created_at: String
     updated_at: String

@@ -7,6 +7,18 @@ const datasource = require('./Datasource')
 // responsible for fetching the data for those types.
 const server = new ApolloServer({
     schema,
+    formatError: error => {
+        console.log(error);
+        return error;
+    },
+    formatResponse: response => {
+        console.log(response);
+        return response;
+    },
+    engine: {
+        apiKey: process.env.ENGINE_API_KEY
+    },
+    tracing: true,
     dataSources: () => {return {trackerAPI: new datasource()}},
 });
 

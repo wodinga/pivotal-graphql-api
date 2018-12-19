@@ -18,9 +18,9 @@ type Story {
     labels: [Label]
     tasks: [Task]
     pull_request_ids: [ID]
-    blocker_ids: [Person]
-    follower_ids: [Person]
-    comment_ids: [Comment]
+    blocker: [Person]
+    follower: [Person]
+    comments: [Comment]
     created_at: String
     updated_at: String
     before_id: ID
@@ -32,9 +32,13 @@ type Story {
 `
 
 module.exports.resolvers = {
-    Project: {
+    Story: {
+        comments: async (_source, args, { dataSources }) => {
+            let comments = await dataSources.trackerAPI.getComments(_source.project_id, _source.id);
+            return comments
+        },
         labels: async (_source, args, { dataSources }) => {
-            return dataSources.trackerAPI.getLabels(_source.id);9
+            return dataSources.trackerAPI.getLabels(_source.id);
         },
     }
 

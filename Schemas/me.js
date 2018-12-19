@@ -8,6 +8,7 @@ type Me {
     receives_in_app_notifications: Boolean!
     accounts: [Account]
     projects: [Project]
+    project(id: ID!): Project
     email: String
     created_at: String
     updated_at: String
@@ -21,11 +22,14 @@ module.exports.resolvers = {
         },
     },
     Me: {
+        project: async (_source, {id}, { dataSources }) => {
+            return dataSources.trackerAPI.getProject(id);
+        },
         projects: async (_source, {id}, { dataSources }) => {
             return dataSources.trackerAPI.getProjects();
         },
         accounts: async (_source, {id}, { dataSources }) => {
-            return dataSources.trackerAPI.getAccounts();
+            return _source.accounts
         },
     }
 }
