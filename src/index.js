@@ -18,6 +18,11 @@ const server = new ApolloServer({
     engine: {
         apiKey: process.env.ENGINE_API_KEY
     },
+    context: () => {
+       return {
+           token: process.env.TOKEN
+       }
+    },
     tracing: true,
     dataSources: () => {return {trackerAPI: new datasource()}},
 });
