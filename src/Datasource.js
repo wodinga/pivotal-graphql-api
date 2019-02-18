@@ -8,6 +8,7 @@ module.exports = class TrackerAPI extends RESTDataSource {
     willSendRequest(request) {
         request.headers.set('X-TrackerToken', this.context.token);
         request.headers.set('Content-Type', "application/json");
+        // request.path += "&envelope=true"
         console.log(request)
     }
 
@@ -21,8 +22,16 @@ module.exports = class TrackerAPI extends RESTDataSource {
     async getProject(project_id) {
         return this.get(`projects/${project_id}`);
     }
-    async getStories(project_id) {
-        return this.get(`projects/${project_id}/stories`);
+    async getStories(project_id, {offset, filter}) {
+        // let data = await this.get(`projects/${project_id}/stories?envelope=true`)
+        // console.log(data.pagination)
+        // return data.data
+        let obj = {offset, filter}
+        let filteredObj = Object.fromEntries(Object.entries(obj).filter(element => element[1] != undefined))
+
+        let params = new URLSearchParams(filteredObj)
+
+        return this.get(`projects/${project_id}/stories/?${params.toString()}`)
     }
     async getComments(project_id, story_id) {
         return this.get(`projects/${project_id}/stories/${story_id}/comments`);
@@ -32,6 +41,7 @@ module.exports = class TrackerAPI extends RESTDataSource {
     }
     async getMe(api_token) {
         this.context.token = api_token
+
         return this.get('me');
     }
     async getProjects() {
