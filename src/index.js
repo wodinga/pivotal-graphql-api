@@ -9,7 +9,6 @@ const server = new ApolloServer({
   schema,
   formatError: error => {
     console.log(error);
-    var test = 0;
     return error;
   },
   formatResponse: response => {
