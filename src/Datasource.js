@@ -22,16 +22,15 @@ module.exports = class TrackerAPI extends RESTDataSource {
     async getProject(project_id) {
         return this.get(`projects/${project_id}`);
     }
-    async getStories(project_id, {offset, filter}) {
+    async getStories(project_id, params) {
         // let data = await this.get(`projects/${project_id}/stories?envelope=true`)
         // console.log(data.pagination)
         // return data.data
-        let obj = {offset, filter};
-        let filteredObj = Object.fromEntries(Object.entries(obj).filter(element => element[1] !== undefined));
+        let filteredObj = Object.fromEntries(Object.entries(params).filter(element => element[1] !== undefined));
 
-        let params = new URLSearchParams(filteredObj);
+        let filteredParams = new URLSearchParams(filteredObj);
 
-        return this.get(`projects/${project_id}/stories/?${params.toString()}`);
+        return this.get(`projects/${project_id}/stories/?${filteredParams.toString()}`);
     }
     async getComments(project_id, story_id) {
         return this.get(`projects/${project_id}/stories/${story_id}/comments`);
