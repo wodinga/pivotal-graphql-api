@@ -31,7 +31,7 @@ const Query = `
 const schemas = [Account, Comment, Project ,Current_State,Epic, Label, Person, Status, Story, Story_type,Task, Timezone, Week_start_day, Me];
 
 const typeDefs = [Query].concat(schemas.map((schema) => schema.typedef));
-const resolvers = schemas.filter((schema) => schema.resolvers != undefined).map((schema) => schema.resolvers);
+const resolvers = schemas.filter((schema) => schema.resolvers !== undefined).map((schema) => schema.resolvers);
 
 //Make and merge schemas
 const schema = makeExecutableSchema({typeDefs, resolvers});
