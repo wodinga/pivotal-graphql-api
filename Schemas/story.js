@@ -2,6 +2,7 @@ module.exports.typedef = `
 type Story {
     id: ID
     project: Project
+    name: String
     description: String
     story_type: Story_type
     current_state: Current_state

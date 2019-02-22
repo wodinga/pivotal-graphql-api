@@ -27,10 +27,6 @@ module.exports = class TrackerAPI extends RESTDataSource {
         // console.log(data.pagination)
         // return data.data
 
-        if (params.hasOwnProperty('filter')){
-          params.filter = encodeURIComponent(params.filter);
-        }
-
         let filteredObj = Object.fromEntries(Object.entries(params).filter(element => element[1] !== undefined));
 
         let filteredParams = new URLSearchParams(filteredObj);
