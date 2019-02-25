@@ -12,7 +12,11 @@ type Project {
     updated_at: String
     labels: [Label]
     epics: [Epic]
-    stories(offset: Int, limit: Int = 10, filter: String): [Story]
+    stories(offset: Int, 
+            limit: Int = 10,
+            filter: String,
+            with_state: Current_state,
+            with_story_type: Story_type): [Story]
 }
 `;
 

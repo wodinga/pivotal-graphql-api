@@ -1,12 +1,12 @@
 module.exports.typedef = `
 enum Current_state {
-    ACCEPTED
-    DELIVERED
-    FINISHED
-    STARTED
-    REJECTED
-    PLANNED
-    UNSTARTED
-    UNSCHEDULED
+    accepted
+    delivered
+    finished
+    started
+    rejected
+    planned
+    unstarted
+    unscheduled
 }
 `
