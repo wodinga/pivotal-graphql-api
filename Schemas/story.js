@@ -38,9 +38,14 @@ module.exports.resolvers = {
             let comments = await dataSources.trackerAPI.getComments(_source.project_id, _source.id);
             return comments
         },
-        labels: async (_source, args, { dataSources }) => {
-            return dataSources.trackerAPI.getLabels(_source.id);
+        project: async (_source, args, { dataSources }) => {
+            return dataSources.trackerAPI.getProject(_source.project_id);
         },
+
+        labels: async (_source, args, { dataSources }) => {
+            return dataSources.trackerAPI.getStoryLabels(_source.project_id, _source.id);
+        },
+
     }
 
 }

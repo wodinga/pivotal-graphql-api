@@ -16,8 +16,12 @@ module.exports = class TrackerAPI extends RESTDataSource {
         return this.get(`projects/${project_id}/epics`);
     }
 
-    async getLabels(project_id) {
+    async getProjectLabels(project_id) {
         return this.get(`projects/${project_id}/labels`);
+    }
+
+    async getStoryLabels(project_id, story_id){ 
+        return this.get(`projects/${project_id}/stories/${story_id}/labels`);
     }
     async getProject(project_id) {
         return this.get(`projects/${project_id}`);
