@@ -14,7 +14,7 @@ type Project_Membership {
 module.exports.resolvers = {
     Query: {
         Project_membership: async (_source, { id }, { dataSources }) => {
-            return dataSources.trackerAPI.getProjects(id);
+            return dataSources.trackerAPI.getProjectMemberships(id);
         },
     },
     Project_membership: {
