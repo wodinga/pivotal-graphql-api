@@ -16,6 +16,7 @@ type Project {
             limit: Int = 10,
             filter: String,
             with_state: Current_state,
+            with_label: String,
             with_story_type: Story_type): [Story]
 }
 `;
