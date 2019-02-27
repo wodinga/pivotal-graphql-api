@@ -15,7 +15,7 @@ type Story {
     counts_accepted: Int
     counts_total: Int
     requested_by_id: Person
-    owner_ids: [Person]
+    owners: [Person]
     labels: [Label]
     tasks: [Task]
     pull_request_ids: [ID]
@@ -33,19 +33,22 @@ type Story {
 `
 
 module.exports.resolvers = {
-    Story: {
-        comments: async (_source, args, { dataSources }) => {
-            let comments = await dataSources.trackerAPI.getComments(_source.project_id, _source.id);
-            return comments
-        },
-        project: async (_source, args, { dataSources }) => {
-            return dataSources.trackerAPI.getProject(_source.project_id);
-        },
+  Story: {
+    comments: async (_source, args, { dataSources }) => {
+      let comments = await dataSources.trackerAPI.getComments(_source.project_id, _source.id)
+      return comments
+    },
+    project: async (_source, args, { dataSources }) => {
+      return dataSources.trackerAPI.getProject(_source.project_id)
+    },
 
-        labels: async (_source, args, { dataSources }) => {
-            return dataSources.trackerAPI.getStoryLabels(_source.project_id, _source.id);
-        },
+    labels: async (_source, args, { dataSources }) => {
+      return dataSources.trackerAPI.getStoryLabels(_source.project_id, _source.id)
+    },
 
+    owners: async (_source, args, { dataSources }) => {
+      return dataSources.trackerAPI.getStoryOwners(_source.project_id, _source.id)
     }
+  }
 
 }

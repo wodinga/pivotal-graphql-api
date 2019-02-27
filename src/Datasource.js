@@ -1,54 +1,62 @@
-const RESTDataSource = require('apollo-datasource-rest').RESTDataSource;
+const RESTDataSource = require('apollo-datasource-rest').RESTDataSource
 module.exports = class TrackerAPI extends RESTDataSource {
-    constructor() {
-        super();
-        this.baseURL = 'https://www.pivotaltracker.com/services/v5/';
-    }
+  constructor () {
+    super()
+    this.baseURL = 'https://www.pivotaltracker.com/services/v5/'
+  }
 
-    willSendRequest(request) {
-        request.headers.set('X-TrackerToken', this.context.token);
-        request.headers.set('Content-Type', 'application/json');
-        // request.path += "&envelope=true"
-        console.log(request);
-    }
+  willSendRequest (request) {
+    request.headers.set('X-TrackerToken', this.context.token)
+    request.headers.set('Content-Type', 'application/json')
+    // request.path += "&envelope=true"
+    console.log(request)
+  }
 
-    async getEpics(project_id) {
-        return this.get(`projects/${project_id}/epics`);
-    }
+  async getEpics (project_id) {
+    return this.get(`projects/${project_id}/epics`)
+  }
 
-    async getProjectLabels(project_id) {
-        return this.get(`projects/${project_id}/labels`);
-    }
+  async getProjectLabels (project_id) {
+    return this.get(`projects/${project_id}/labels`)
+  }
 
-    async getStoryLabels(project_id, story_id){ 
-        return this.get(`projects/${project_id}/stories/${story_id}/labels`);
-    }
-    async getProject(project_id) {
-        return this.get(`projects/${project_id}`);
-    }
-    async getStories(project_id, params) {
-        // let data = await this.get(`projects/${project_id}/stories?envelope=true`)
-        // console.log(data.pagination)
-        // return data.data
+  async getStoryOwners (project_id, story_id) {
+    return this.get(`projects/${project_id}/stories/${story_id}/owners`)
+  }
 
-        let filteredObj = Object.fromEntries(Object.entries(params).filter(element => element[1] !== undefined));
+  async getStoryLabels (project_id, story_id) {
+    return this.get(`projects/${project_id}/stories/${story_id}/labels`)
+  }
+  async getProjectMemberships (project_id) {
+    return this.get(`projects/${project_id}/memberships`).then((memberships) => memberships.map((membership) => membership.person))
+  }
 
-        let filteredParams = new URLSearchParams(filteredObj);
+  async getProject (project_id) {
+    return this.get(`projects/${project_id}`)
+  }
+  async getStories (project_id, params) {
+    // let data = await this.get(`projects/${project_id}/stories?envelope=true`)
+    // console.log(data.pagination)
+    // return data.data
 
-        return this.get(`projects/${project_id}/stories/?${filteredParams.toString()}`);
-    }
-    async getComments(project_id, story_id) {
-        return this.get(`projects/${project_id}/stories/${story_id}/comments`);
-    }
-    async getAccounts() {
-        return this.get('accounts');
-    }
-    async getMe(api_token) {
-        this.context.token = api_token;
+    let filteredObj = Object.fromEntries(Object.entries(params).filter(element => element[1] !== undefined))
 
-        return this.get('me');
-    }
-    async getProjects() {
-        return this.get('projects');
-    }
-};
+    let filteredParams = new URLSearchParams(filteredObj)
+
+    return this.get(`projects/${project_id}/stories/?${filteredParams.toString()}`)
+  }
+  async getComments (project_id, story_id) {
+    return this.get(`projects/${project_id}/stories/${story_id}/comments`)
+  }
+  async getAccounts () {
+    return this.get('accounts')
+  }
+  async getMe (api_token) {
+    this.context.token = api_token
+
+    return this.get('me')
+  }
+  async getProjects () {
+    return this.get('projects')
+  }
+}
