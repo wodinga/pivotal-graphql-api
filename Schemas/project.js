@@ -25,22 +25,22 @@ type Project {
 
 module.exports.resolvers = {
   Query: {
-    Projects: async (_source, { id }, { dataSources }) => {
+    Projects: async (_source, {id}, {dataSources}) => {
       return dataSources.trackerAPI.getProjects(id)
     }
   },
   Project: {
-    epics: async (_source, args, { dataSources }) => {
+    epics: async (_source, args, {dataSources}) => {
       return dataSources.trackerAPI.getEpics(_source.id)
     },
-    stories: async (_source, args, { dataSources }) => {
+    stories: async (_source, args, {dataSources}) => {
       return dataSources.trackerAPI.getStories(_source.id, args)
     },
-    members: async (_source, args, { dataSources }) => {
+    members: async (_source, args, {dataSources}) => {
       return dataSources.trackerAPI.getProjectMemberships(_source.id)
     },
-    labels: async (_source, args, { dataSources }) => {
-      return dataSources.trackerAPI.getLabels(_source.id)
+    labels: async (_source, args, {dataSources}) => {
+      return dataSources.trackerAPI.getProjectLabels(_source.id)
     }
   }
 
