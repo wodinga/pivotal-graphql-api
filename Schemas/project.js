@@ -18,6 +18,7 @@ type Project {
             filter: String,
             with_state: Current_state,
             with_label: String,
+            created_after: String,
             with_story_type: Story_type): [Story]
 }
 `
