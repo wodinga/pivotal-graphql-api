@@ -34,6 +34,11 @@ module.exports = class TrackerAPI extends RESTDataSource {
   async getProject (project_id) {
     return this.get(`projects/${project_id}`)
   }
+
+  async getStory (project_id, story_id) {
+    return this.get(`projects/${project_id}/stories/${story_id}`)
+  }
+
   async getStories (project_id, params) {
     // let data = await this.get(`projects/${project_id}/stories?envelope=true`)
     // console.log(data.pagination)

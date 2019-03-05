@@ -13,6 +13,7 @@ type Project {
     labels: [Label]
     epics: [Epic]
     members(offset: Int,  limit: Int = 10) : [Person]
+    story(id: ID!): Story
     stories(offset: Int, 
             limit: Int = 10,
             filter: String,
@@ -32,6 +33,9 @@ module.exports.resolvers = {
   Project: {
     epics: async (_source, args, {dataSources}) => {
       return dataSources.trackerAPI.getEpics(_source.id)
+    },
+    story: async (_source, {id}, {dataSources}) => {
+      return dataSources.trackerAPI.getStory(_source.id, id)
     },
     stories: async (_source, args, {dataSources}) => {
       return dataSources.trackerAPI.getStories(_source.id, args)
