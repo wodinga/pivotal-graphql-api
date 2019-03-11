@@ -28,7 +28,8 @@ module.exports = class TrackerAPI extends RESTDataSource {
     return this.get(`projects/${project_id}/stories/${story_id}/labels`)
   }
   async getProjectMemberships (project_id) {
-    return this.get(`projects/${project_id}/memberships`).then((memberships) => memberships.map((membership) => membership.person))
+    //return this.get(`projects/${project_id}/memberships`).then((memberships) => memberships.map((membership) => membership.person))
+    return this.get(`projects/${project_id}/memberships`)
   }
 
   async getProject (project_id) {

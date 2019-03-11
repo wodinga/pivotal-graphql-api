@@ -1,0 +1,18 @@
+applications:
+- name: ic-appliance-product-availability
+  host: inventory-commons-services-qp
+  memory: 512M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  env:
+      APPDYNAMICS_CONTROLLER_HOST_NAME: 'appdx-qa.homedepot.com'
+      APPDYNAMICS_CONTROLLER_PORT: 9401
+      APPDYNAMICS_CONTROLLER_SSL_ENABLED: true
+      APPDYNAMICS_AGENT_ACCOUNT_NAME: 'customer1'
+      APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY: '29d48c69-b3d8-462a-bcfd-0f974a80af84'
+      APPDYNAMICS_AGENT_APPLICATION_NAME: 'ic-appliance-product-availability'
+      APPDYNAMICS_AGENT_TIER_NAME: 'ic-appliance-product-availability-qp'
+      APPDYNAMICS_AGENT_NODE_NAME: 'service-api-qp'
+      APPDYNAMICS_DEBUG: true
+      NODE_ENV: qp
+      TIMEOUT: 12000

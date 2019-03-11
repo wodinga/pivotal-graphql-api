@@ -12,7 +12,7 @@ type Project {
     updated_at: String
     labels: [Label]
     epics: [Epic]
-    members(offset: Int,  limit: Int = 10) : [Person]
+    members(offset: Int,  limit: Int = 10) : [Project_Membership]
     story(id: ID!): Story
     stories(offset: Int, 
             limit: Int = 10,
