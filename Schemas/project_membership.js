@@ -13,19 +13,19 @@ type Project_Membership {
 
 module.exports.resolvers = {
     Query: {
-        Project_membership: async (_source, { id }, { dataSources }) => {
-            return dataSources.trackerAPI.getProjectMemberships(id);
+        Project_membership: async (_source, {id}, {dataSources}) => {
+            return dataSources.trackerAPI.getProjectMemberships(id)
         },
     },
     Project_membership: {
-        epics: async (_source, args, { dataSources }) => {
-            return dataSources.trackerAPI.getEpics(_source.id);
+        epics: async (_source, args, {dataSources}) => {
+            return dataSources.trackerAPI.getEpics(_source.id)
         },
-        stories: async (_source, args, { dataSources }) => {
-            return dataSources.trackerAPI.getStories(_source.id, args);
+        stories: async (_source, args, {dataSources}) => {
+            return dataSources.trackerAPI.getStories(_source.id, args)
         },
-        labels: async (_source, args, { dataSources }) => {
-            return dataSources.trackerAPI.getLabels(_source.id);
+        labels: async (_source, args, {dataSources}) => {
+            return dataSources.trackerAPI.getLabels(_source.id)
         },
     }
 
