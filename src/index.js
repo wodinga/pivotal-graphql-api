@@ -13,7 +13,8 @@ const server = new ApolloServer({
     return error
   },
   formatResponse: response => {
-    logger.info(response)
+    logger.info('data', response.data)
+    logger.verbose('tracing info', response.extensions.tracing)
     return response
   },
   engine: {
@@ -24,7 +25,7 @@ const server = new ApolloServer({
       token: process.env.TOKEN
     }
   },
-  mocking: true,
+  mocks: true,
   tracing: true,
   dataSources: () => {
     return {trackerAPI: new datasource()}

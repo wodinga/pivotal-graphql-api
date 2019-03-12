@@ -66,7 +66,6 @@ module.exports.resolvers = {
         : null
     },
     owners: async (_source, args, {dataSources}) => {
-      debugger
       return dataSources.trackerAPI.getStoryOwners(
         _source.project_id,
         _source.id

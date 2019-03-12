@@ -34,7 +34,6 @@ module.exports = class TrackerAPI extends RESTDataSource {
 
   async getProject(project_id) {
     console.log(await this.get(`projects/${project_id}`))
-    debugger
     return this.get(`projects/${project_id}`)
   }
 
