@@ -24,6 +24,7 @@ const server = new ApolloServer({
       token: process.env.TOKEN
     }
   },
+  mocking: true,
   tracing: true,
   dataSources: () => {
     return {trackerAPI: new datasource()}

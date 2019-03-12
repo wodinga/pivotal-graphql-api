@@ -4,6 +4,8 @@ type Story {
     project: Project
     name: String
     description: String
+		before: Person
+		after: Person
     story_type: Story_type
     current_state: Current_state
     estimate: Float
@@ -34,21 +36,41 @@ type Story {
 
 module.exports.resolvers = {
   Story: {
-    comments: async (_source, args, { dataSources }) => {
-      let comments = await dataSources.trackerAPI.getComments(_source.project_id, _source.id)
+    comments: async (_source, args, {dataSources}) => {
+      let comments = await dataSources.trackerAPI.getComments(
+        _source.project_id,
+        _source.id
+      )
       return comments
     },
-    project: async (_source, args, { dataSources }) => {
+    project: async (_source, args, {dataSources}) => {
       return dataSources.trackerAPI.getProject(_source.project_id)
     },
 
-    labels: async (_source, args, { dataSources }) => {
-      return dataSources.trackerAPI.getStoryLabels(_source.project_id, _source.id)
+    labels: async (_source, args, {dataSources}) => {
+      return dataSources.trackerAPI.getStoryLabels(
+        _source.project_id,
+        _source.id
+      )
     },
 
-    owners: async (_source, args, { dataSources }) => {
-      return dataSources.trackerAPI.getStoryOwners(_source.project_id, _source.id)
+    before: async (_source, args, {dataSources}) => {
+      return _source.before_id
+        ? dataSources.trackerAPI.getStory(_source.project_id, _source.before_id)
+        : null
+    },
+
+    after: async (_source, args, {dataSources}) => {
+      return _source.after_id
+        ? dataSources.trackerAPI.getStory(_source.project_id, _source.after_id)
+        : null
+    },
+    owners: async (_source, args, {dataSources}) => {
+      debugger
+      return dataSources.trackerAPI.getStoryOwners(
+        _source.project_id,
+        _source.id
+      )
     }
   }
-
 }

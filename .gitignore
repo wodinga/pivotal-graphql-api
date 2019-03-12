@@ -26,3 +26,4 @@ schemaValidator
 .idea/
 .idea/
 .env
+*.log
