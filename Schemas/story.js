@@ -4,8 +4,8 @@ type Story {
     project: Project
     name: String
     description: String
-		before: Person
-		after: Person
+		before: Story
+		after: Story
     story_type: Story_type
     current_state: Current_state
     estimate: Float
