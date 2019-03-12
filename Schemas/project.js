@@ -20,6 +20,7 @@ type Project {
             with_state: Current_state,
             with_label: String,
             created_after: String,
+            after_story_id: ID
             with_story_type: Story_type): [Story]
 }
 `
@@ -47,5 +48,4 @@ module.exports.resolvers = {
       return dataSources.trackerAPI.getProjectLabels(_source.id)
     }
   }
-
 }

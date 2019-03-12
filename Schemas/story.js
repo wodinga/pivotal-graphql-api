@@ -4,7 +4,9 @@ type Story {
     project: Project
     name: String
     description: String
+		"Story that appears before in list of stories in the project"
 		before: Story
+		"Story that appears after in list of stories in the project"
 		after: Story
     story_type: Story_type
     current_state: Current_state
