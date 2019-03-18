@@ -12,6 +12,30 @@ module.exports = class TrackerAPI extends RESTDataSource {
     console.log(request)
   }
 
+  async getAccounts() {
+    return this.get('accounts')
+  }
+
+  async getAccount(account_id) {
+    return this.get('accounts/${account_id}')
+  }
+
+  async getAccountMemberships(account_id) {
+    return this.get('accounts/${account_id}/memberships')
+  }
+
+  async getBlockers(project_id, story_id) {
+    return this.get(`projects/${project_id}/stories/${story_id}/blocker`)
+  }
+
+  async getComments(project_id, story_id) {
+    return this.get(`projects/${project_id}/stories/${story_id}/comments`)
+  }
+
+  async getEpic(project_id,epic_id) {
+    return this.get(`projects/${project_id}/epics/${epic_id}`)
+  }
+
   async getEpics(project_id) {
     return this.get(`projects/${project_id}/epics`)
   }
@@ -57,12 +81,6 @@ module.exports = class TrackerAPI extends RESTDataSource {
     return this.get(
       `projects/${project_id}/stories/?${filteredParams.toString()}`
     )
-  }
-  async getComments(project_id, story_id) {
-    return this.get(`projects/${project_id}/stories/${story_id}/comments`)
-  }
-  async getAccounts() {
-    return this.get('accounts')
   }
   async getMe(api_token) {
     this.context.token = api_token
