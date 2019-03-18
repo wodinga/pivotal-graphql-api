@@ -11,7 +11,7 @@ type Label{
 
 module.exports.resolvers = {
     Label: {
-        project: async (_source, {project_id}, { dataSources }) => {
+        project: async (_source, {project_id}, {dataSources}) => {
             return dataSources.trackerAPI.getProject(_source.project_id)
         },
     }
