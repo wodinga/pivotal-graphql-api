@@ -17,19 +17,19 @@ type Me {
 
 module.exports.resolvers = {
     Query: {
-        me: async (_source, {api_token}, { dataSources }) => {
-            return dataSources.trackerAPI.getMe(api_token);
+        me: async (_source, {api_token}, {dataSources}) => {
+            return dataSources.trackerAPI.getMe(api_token)
         },
     },
     Me: {
-        project: async (_source, {id}, { dataSources }) => {
-            return dataSources.trackerAPI.getProject(id);
+        project: async (_source, {id}, {dataSources}) => {
+            return dataSources.trackerAPI.getProject(id)
         },
-        projects: async (_source, {id}, { dataSources }) => {
-            return dataSources.trackerAPI.getProjects();
+        projects: async (_source, {id}, {dataSources}) => {
+            return dataSources.trackerAPI.getProjects()
         },
-        accounts: async (_source, {id}, { dataSources }) => {
-            return _source.accounts
+        accounts: async (_source, {id}, {dataSources}) => {
+            return dataSources.trackerAPI.getAccounts(_source.accounts)
         },
     }
 }
