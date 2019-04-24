@@ -41,11 +41,11 @@ module.exports = class TrackerAPI extends RESTDataSource {
   }
 
   async getIterations(project_id) {
-    return this.get(`projects/${project_id}/iterations`)
+    return this.get(`projects/${project_id}/iterations?fields=:default,velocity,points,accepted_points`)
   }
 
   async getIteration(project_id, iteration_num) {
-    return this.get(`projects/${project_id}/iterations/${iteration_num}`)
+    return this.get(`projects/${project_id}/iterations/${iteration_num}?fields=:default,velocity,points,accepted_points`)
   }
 
   async getEpics(project_id) {

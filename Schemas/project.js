@@ -1,10 +1,12 @@
+const logger = require('../utils/logger')
 module.exports.typedef = `
 type Project {
     id: ID!
     name: String
     status: String
     version: Int
-    interation_length: Int
+    iteration_length: Int
+    iterations: [Iteration]
     week_start_day: Week_start_day!
     point_scale: String
     point_scale_is_custom: Boolean
@@ -43,6 +45,10 @@ module.exports.resolvers = {
     },
     members: async (_source, args, {dataSources}) => {
       return dataSources.trackerAPI.getProjectMemberships(_source.id)
+    },
+    iterations: async (_source, args, {dataSources}) => {
+      logger.info(_source)
+      return dataSources.trackerAPI.getIterations(_source.id)
     },
     labels: async (_source, args, {dataSources}) => {
       return dataSources.trackerAPI.getProjectLabels(_source.id)

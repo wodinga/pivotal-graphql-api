@@ -1,9 +1,9 @@
 module.exports.typedef = `
 type Iteration {
 	id: ID!
-	"""teration number starting from 1 for the first iteration in the project. This field is read only. This field is always returned."""
-	number: Int
-	project: Project
+	"""Iteration number starting from 1 for the first iteration in the project. This field is read only. This field is always returned."""
+	number: Int!
+	project: Project!
 	""" Iteration length in weeks. """
 	length: Int
 	stories: [Story]
@@ -19,27 +19,10 @@ type Iteration {
 }
 `
 
-//module.exports.resolvers = {
-  //Query: {
-    //Projects: async (_source, {id}, {dataSources}) => {
-      //return dataSources.trackerAPI.getProjects(id)
-    //}
-  //},
-  //Project: {
-    //epics: async (_source, args, {dataSources}) => {
-      //return dataSources.trackerAPI.getEpics(_source.id)
-    //},
-    //story: async (_source, {id}, {dataSources}) => {
-      //return dataSources.trackerAPI.getStory(_source.id, id)
-    //},
-    //stories: async (_source, args, {dataSources}) => {
-      //return dataSources.trackerAPI.getStories(_source.id, args)
-    //},
-    //members: async (_source, args, {dataSources}) => {
-      //return dataSources.trackerAPI.getProjectMemberships(_source.id)
-    //},
-    //labels: async (_source, args, {dataSources}) => {
-      //return dataSources.trackerAPI.getProjectLabels(_source.id)
-    //}
-  //}
-//}
+module.exports.resolvers = {
+  Iteration: {
+    analytics: async (_source, args, {dataSources}) => {
+      return dataSources.trackerAPI.getProject(_source.project_id)
+    }
+  }
+}
